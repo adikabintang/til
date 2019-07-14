@@ -1,4 +1,3 @@
-goto linux, stack unwinding
 # goto is considered harmful. or it depends on the context.
 Apparently `goto` is not that [*haram*](https://en.wikipedia.org/wiki/Haram).
 
