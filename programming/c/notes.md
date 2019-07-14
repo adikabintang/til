@@ -5,7 +5,7 @@ At least in C.
 
 Linus said himself: https://koblents.com/Ches/Links/Month-Mar-2013/20-Using-Goto-in-Linux-Kernel-Code/
 
-According to Suhu Erik, this is super fine and it's good to use `goto` like this:
+According to Suhu Erik, this is completely fine and it's good to use `goto` like this:
 ```C
 void foo()
 {
