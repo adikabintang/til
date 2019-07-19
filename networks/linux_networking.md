@@ -9,3 +9,17 @@ Because there is TCP offloading: the segmentation is done by the NIC not the CPU
 Ref: 
 - https://blog.packet-foo.com/2014/05/the-drawbacks-of-local-packet-captures/
 - https://packetbomb.com/how-can-the-packet-size-be-greater-than-the-mtu/
+
+# How to know the available bandwidth from one point to another
+
+On the server:
+
+```
+iperf -s
+```
+
+On the client:
+
+```
+iperf -c server_ip
+```
