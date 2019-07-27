@@ -5,7 +5,7 @@ The answer is here: https://codeburst.io/why-goroutines-are-not-lightweight-thre
 ## Intro: process vs thread
 
 Some basic stuffs:
-1. Thread share memory space, PID, and file descriptors. Process share none of the three. 
+1. Threads share memory space, PID, and file descriptors. Processes share none of the three. 
 2. Communication between threads is simpler because they have a shared memory. In process, we need Inter-Process Communications (IPC) modes such as piper, semaphores, etc.
 
 Thread is a lightweight process. But, it does not always mean that thread is always lighter than process. Why? because synchronizing data in shared memory takes effort.
