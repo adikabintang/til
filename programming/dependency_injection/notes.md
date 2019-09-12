@@ -97,7 +97,7 @@ public class Application {
     }
 
     // we create the client object and inject it's dependency
-    private Client createClient() {
+    private static Client createClient() {
         OurBasicWriter w = new TextWriter();
         Client client = new Client(w);
         return client;
@@ -168,12 +168,14 @@ public class Application {
         AnnotationConfigApplicationContext context = 
             new AnnotationConfigApplicationContext();
 
-        Client client = context.getBean(Client.class);;
+        context.scan("mypackagename");
+        context.refresh();
+        Client client = context.getBean(Client.class);
     }
 
     // @Bean telss Spring that this is the method for injection
     @Bean
-    private Client createClient() {
+    public Client createClient() {
         OurBasicWriter w = new TextWriter();
         Client client = new Client(w);
         return client;
@@ -189,11 +191,10 @@ public interface OurBasicWriter {
 }
 
 /*
-@Component tells that this class is the object that will be used as the 
-service: the injector will inject this to the client class
+@Component: Spring Framework will autodetect the class for dependency injection
+when annotation-based configuration and classpath scanning is used
 */
-@Component
-@Qualifier("TextWriter")
+@Component("TextWriter")
 public class TextWriter implements OurBasicWriter {
     public TextWriter() {}
 
@@ -204,6 +205,7 @@ public class TextWriter implements OurBasicWriter {
     }
 }
 
+@Component
 public class Client {
     // if we use @Autowired, the setter/constructor for dependency injection
     // is no longer needed.
@@ -227,7 +229,9 @@ public class Application {
         AnnotationConfigApplicationContext context = 
             new AnnotationConfigApplicationContext();
 
-        Client client = context.getBean(Client.class);;
+        context.scan("mypackagename");
+        context.refresh();
+        Client client = context.getBean(Client.class);
     }
 
     // with @Autowired, no @Bean needed
