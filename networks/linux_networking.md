@@ -23,3 +23,10 @@ On the client:
 ```
 iperf -c server_ip
 ```
+
+# TCP tuning in linux
+
+https://linux2me.wordpress.com/2018/06/03/tuning-the-tcp-stack-system-administrator/
+
+
+
