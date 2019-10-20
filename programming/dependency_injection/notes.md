@@ -18,7 +18,7 @@ public class Client {
     private TextWriter writer;
 
     public Client() {
-        // this example is also apply if we use Factory pattern such that
+        // not only "new", but also asking from the factory class
         // this.writer = Factory.getTextWriter(); for example
         this.writer = new TextWriter();
     }
