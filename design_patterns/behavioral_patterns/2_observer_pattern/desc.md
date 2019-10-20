@@ -1,4 +1,7 @@
-This is a note taken from here: https://sourcemaking.com/design_patterns/observer 
+Good reading materials: 
+- https://sourcemaking.com/design_patterns/observer 
+- https://medium.com/datadriveninvestor/design-patterns-a-quick-guide-to-observer-pattern-d0622145d6c2
+
 
 # Observer design pattern
 ## Intent
