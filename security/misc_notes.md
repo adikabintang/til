@@ -17,6 +17,10 @@ As a reminder:
 - Non-repudiation: A send a message and a proof to B. B sends the received message and proof to C. C is still confident that this message and proof come from A (C does not have to trust B). [[security.stackexchange.com](https://security.stackexchange.com/questions/6730/what-is-the-difference-between-authenticity-and-non-repudiation)][[crypto.stackexchange.com](https://crypto.stackexchange.com/questions/5646/what-are-the-differences-between-a-digital-signature-a-mac-and-a-hash)]
 
 
+# DoS
+ 
+- Asymmetry is the front door into DoS. Example: the server needs to compute every request that comes, but the client does not need to do anything. The client can easily flood the server.
+
 
 # Platform Security
 ## Trusted Platform Module (TPM)
