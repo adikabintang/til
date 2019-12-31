@@ -21,6 +21,9 @@ As a reminder:
  
 - Asymmetry is the front door into DoS. Example: the server needs to compute every request that comes, but the client does not need to do anything. The client can easily flood the server.
 
+# H(k || m) is not a secure MAC construction
+
+Building MAC with `H(key || m)` does not guarantee unforgeability. See here: https://crypto.stackexchange.com/questions/1070/why-is-hk-mathbin-vert-x-not-a-secure-mac-construction
 
 # Platform Security
 ## Trusted Platform Module (TPM)

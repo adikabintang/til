@@ -82,7 +82,7 @@ std::vector<int> nums{1, 2, 3, 4, 5, 6};
 std::vector<int> result;
 
 // std::transform = map
-// if you want the result to be in "nums" to,
+// if you want the result to be in "nums" too,
 // put nums.begin() instead of std::back_inserter(result) as 
 // the 3rd parameter
 std::transform(nums.begin(), nums.end(), std::back_inserter(result),
@@ -123,6 +123,4 @@ List<Integer> filterRes = myList.stream()
 
 System.out.println(filterRes);
 ```
-
-
 
