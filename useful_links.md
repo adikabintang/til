@@ -1,3 +1,22 @@
+# Networks
+
+## Performance evaluation of computer and communication systems
+
+Keywords: experiment, performance, evaluation, confidence interval, simulation, analysis, least squares, research
+
+- https://perfeval.epfl.ch/lectureNotes.htm
+- https://perfeval.epfl.ch/slides.htm
+
+## TCP/IP lecture
+
+Keywords: routing, OSPF, BGP, congestion control, computer networks
+
+With slides and video lectures from the EPFL's TCP/IP course: https://moodlearchive.epfl.ch/2018-2019/course/view.php?id=523 
+
+## A tutorial of rate adaptation, congestion control, and fairness
+
+https://ica1www.epfl.ch/PS_files/LEB3132.pdf
+
 # Security
 
 ## Cryptography
